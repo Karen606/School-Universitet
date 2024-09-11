@@ -167,12 +167,12 @@
                     <navigationItem key="navigationItem" id="sFz-gq-OTy"/>
                     <connections>
                         <outlet property="firstDot" destination="x14-ey-k80" id="2N2-u0-hhW"/>
-                        <outlet property="firstDotWidthConst" destination="vuo-Bq-P4H" id="B8Q-Z3-x3s"/>
+                        <outlet property="firstDotWidthConst" destination="vuo-Bq-P4H" id="y3S-Ct-XyP"/>
                         <outlet property="nextButton" destination="tcy-6q-yBb" id="xBZ-Dx-1eP"/>
-                        <outlet property="privacyPolicy" destination="fuQ-lh-bfc" id="edO-v0-IBK"/>
+                        <outlet property="privacyPolicy" destination="fuQ-lh-bfc" id="xgZ-MO-QIw"/>
                         <outlet property="secondDot" destination="hYv-N2-mAK" id="O8L-DG-Q3z"/>
-                        <outlet property="secondDotWidthConst" destination="cqL-c2-hDF" id="ajG-tp-qBF"/>
-                        <outlet property="termsOfUse" destination="OyJ-Az-qJ6" id="dNB-bz-i1L"/>
+                        <outlet property="secondDotWidthConst" destination="cqL-c2-hDF" id="gxZ-Tl-tG9"/>
+                        <outlet property="termsOfUse" destination="OyJ-Az-qJ6" id="X4I-1S-JoA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

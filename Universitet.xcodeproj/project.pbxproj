@@ -29,6 +29,17 @@
 		6B14FEA62C91B0C800961B01 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FEA32C91B0C800961B01 /* MenuViewController.swift */; };
 		6B14FEA72C91BE7900961B01 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B07EFDC2C9199F700F5AC5A /* Splash.storyboard */; };
 		6B14FEA92C91BF9900961B01 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FEA82C91BF9900961B01 /* SplashViewController.swift */; };
+		6B14FEAD2C91C2C200961B01 /* ClassesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B14FEAC2C91C2C200961B01 /* ClassesViewController.xib */; };
+		6B14FEAE2C91C2C200961B01 /* ClassesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FEAB2C91C2C200961B01 /* ClassesViewController.swift */; };
+		6B14FEB12C91C32D00961B01 /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 6B14FEB02C91C32D00961B01 /* FSCalendar */; };
+		6B14FEB82C91D16800961B01 /* ClassesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FEB72C91D16800961B01 /* ClassesModel.swift */; };
+		6B14FEBB2C91D3D500961B01 /* ClassesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FEBA2C91D3D500961B01 /* ClassesViewModel.swift */; };
+		6B14FEE12C91DC0200961B01 /* CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FEDF2C91DC0200961B01 /* CoreData.xcdatamodeld */; };
+		6B14FEF02C91DE8A00961B01 /* Day+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FEEE2C91DE8A00961B01 /* Day+CoreDataClass.swift */; };
+		6B14FEF12C91DE8A00961B01 /* Day+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FEEF2C91DE8A00961B01 /* Day+CoreDataProperties.swift */; };
+		6B14FEF52C91E02400961B01 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FEF42C91E02400961B01 /* CoreDataManager.swift */; };
+		6B14FEF82C91EE4E00961B01 /* TodayEventPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FEF72C91EE4E00961B01 /* TodayEventPresentationController.swift */; };
+		6B2EADE12C91F43D00E06679 /* CurrentDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2EADE02C91F43D00E06679 /* CurrentDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +66,16 @@
 		6B14FEA32C91B0C800961B01 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		6B14FEA42C91B0C800961B01 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		6B14FEA82C91BF9900961B01 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		6B14FEAB2C91C2C200961B01 /* ClassesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesViewController.swift; sourceTree = "<group>"; };
+		6B14FEAC2C91C2C200961B01 /* ClassesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ClassesViewController.xib; sourceTree = "<group>"; };
+		6B14FEB72C91D16800961B01 /* ClassesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesModel.swift; sourceTree = "<group>"; };
+		6B14FEBA2C91D3D500961B01 /* ClassesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClassesViewModel.swift; sourceTree = "<group>"; };
+		6B14FEE02C91DC0200961B01 /* CoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreData.xcdatamodel; sourceTree = "<group>"; };
+		6B14FEEE2C91DE8A00961B01 /* Day+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B14FEEF2C91DE8A00961B01 /* Day+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B14FEF42C91E02400961B01 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		6B14FEF72C91EE4E00961B01 /* TodayEventPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayEventPresentationController.swift; sourceTree = "<group>"; };
+		6B2EADE02C91F43D00E06679 /* CurrentDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B14FEB12C91C32D00961B01 /* FSCalendar in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +109,8 @@
 		6B07EFD52C9199F600F5AC5A /* Universitet */ = {
 			isa = PBXGroup;
 			children = (
+				6B14FEF22C91DFED00961B01 /* CoreData */,
+				6B14FEAA2C91C2B200961B01 /* Classes */,
 				6B14FE9E2C91AFB600961B01 /* Menu */,
 				6B07EFFE2C91A3B700F5AC5A /* Extensions */,
 				6B07EFEA2C919E9E00F5AC5A /* Splash */,
@@ -148,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				6B07EFFF2C91A3C700F5AC5A /* UserDefaultsKeys.swift */,
+				6B2EADE02C91F43D00E06679 /* CurrentDate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -159,6 +184,69 @@
 				6B14FEA42C91B0C800961B01 /* MenuViewController.xib */,
 			);
 			path = Menu;
+			sourceTree = "<group>";
+		};
+		6B14FEAA2C91C2B200961B01 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6B14FEB42C91D07500961B01 /* Classes */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6B14FEB42C91D07500961B01 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6B14FEF62C91EE0C00961B01 /* Presentation */,
+				6B14FEB92C91D3C100961B01 /* ViewModel */,
+				6B14FEB62C91D15E00961B01 /* Model */,
+				6B14FEB52C91D08700961B01 /* View */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		6B14FEB52C91D08700961B01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B14FEAB2C91C2C200961B01 /* ClassesViewController.swift */,
+				6B14FEAC2C91C2C200961B01 /* ClassesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B14FEB62C91D15E00961B01 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B14FEB72C91D16800961B01 /* ClassesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B14FEB92C91D3C100961B01 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B14FEBA2C91D3D500961B01 /* ClassesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B14FEF22C91DFED00961B01 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6B14FEEE2C91DE8A00961B01 /* Day+CoreDataClass.swift */,
+				6B14FEEF2C91DE8A00961B01 /* Day+CoreDataProperties.swift */,
+				6B14FEDF2C91DC0200961B01 /* CoreData.xcdatamodeld */,
+				6B14FEF42C91E02400961B01 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		6B14FEF62C91EE0C00961B01 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6B14FEF72C91EE4E00961B01 /* TodayEventPresentationController.swift */,
+			);
+			path = Presentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +265,9 @@
 			dependencies = (
 			);
 			name = Universitet;
+			packageProductDependencies = (
+				6B14FEB02C91C32D00961B01 /* FSCalendar */,
+			);
 			productName = Universitet;
 			productReference = 6B07EFD32C9199F600F5AC5A /* Universitet.app */;
 			productType = "com.apple.product-type.application";
@@ -205,6 +296,9 @@
 				Base,
 			);
 			mainGroup = 6B07EFCA2C9199F600F5AC5A;
+			packageReferences = (
+				6B14FEAF2C91C32D00961B01 /* XCRemoteSwiftPackageReference "FSCalendar" */,
+			);
 			productRefGroup = 6B07EFD42C9199F600F5AC5A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -220,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B07F0012C91A41900F5AC5A /* FirstSplashViewController.xib in Resources */,
+				6B14FEAD2C91C2C200961B01 /* ClassesViewController.xib in Resources */,
 				6B07EFE02C9199F800F5AC5A /* Assets.xcassets in Resources */,
 				6B07EFF22C91A25C00F5AC5A /* SFProText-Medium.ttf in Resources */,
 				6B07EFF52C91A26300F5AC5A /* SFProText-Regular.ttf in Resources */,
@@ -241,13 +336,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B14FEF82C91EE4E00961B01 /* TodayEventPresentationController.swift in Sources */,
 				6B14FE9D2C91AC3300961B01 /* WelcomeViewController.swift in Sources */,
 				6B14FEA62C91B0C800961B01 /* MenuViewController.swift in Sources */,
 				6B07EFDB2C9199F600F5AC5A /* SplashPageViewController.swift in Sources */,
 				6B07F0002C91A3C700F5AC5A /* UserDefaultsKeys.swift in Sources */,
+				6B14FEF52C91E02400961B01 /* CoreDataManager.swift in Sources */,
+				6B2EADE12C91F43D00E06679 /* CurrentDate.swift in Sources */,
+				6B14FEF02C91DE8A00961B01 /* Day+CoreDataClass.swift in Sources */,
+				6B14FEF12C91DE8A00961B01 /* Day+CoreDataProperties.swift in Sources */,
 				6B07EFD72C9199F600F5AC5A /* AppDelegate.swift in Sources */,
 				6B07EFFD2C91A33F00F5AC5A /* SecondSplashViewController.swift in Sources */,
+				6B14FEE12C91DC0200961B01 /* CoreData.xcdatamodeld in Sources */,
+				6B14FEAE2C91C2C200961B01 /* ClassesViewController.swift in Sources */,
 				6B14FE992C91A97A00961B01 /* Font.swift in Sources */,
+				6B14FEB82C91D16800961B01 /* ClassesModel.swift in Sources */,
+				6B14FEBB2C91D3D500961B01 /* ClassesViewModel.swift in Sources */,
 				6B07EFD92C9199F600F5AC5A /* SceneDelegate.swift in Sources */,
 				6B07EFFC2C91A33C00F5AC5A /* FirstSplashViewController.swift in Sources */,
 				6B14FEA92C91BF9900961B01 /* SplashViewController.swift in Sources */,
@@ -473,6 +577,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B14FEAF2C91C32D00961B01 /* XCRemoteSwiftPackageReference "FSCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/WenchaoD/FSCalendar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B14FEB02C91C32D00961B01 /* FSCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B14FEAF2C91C32D00961B01 /* XCRemoteSwiftPackageReference "FSCalendar" */;
+			productName = FSCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		6B14FEDF2C91DC0200961B01 /* CoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6B14FEE02C91DC0200961B01 /* CoreData.xcdatamodel */,
+			);
+			currentVersion = 6B14FEE02C91DC0200961B01 /* CoreData.xcdatamodel */;
+			path = CoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6B07EFCB2C9199F600F5AC5A /* Project object */;
 }

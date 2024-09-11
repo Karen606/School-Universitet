@@ -18,6 +18,8 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func clickedClasses(_ sender: UIButton) {
+        let classesVC = ClassesViewController(nibName: "ClassesViewController", bundle: nil)
+        navigationController?.pushViewController(classesVC, animated: true)
     }
     
     @IBAction func clickedNotes(_ sender: UIButton) {

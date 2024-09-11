@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23G93" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="Classes" representedClassName="Classes" syncable="YES" codeGenerationType="class">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="Day" representedClassName="Day" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="dayName" optional="YES" attributeType="String"/>
+        <attribute name="isActiveDay" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="mood" optional="YES" attributeType="String"/>
+        <attribute name="note" optional="YES" attributeType="String"/>
+    </entity>
+</model>

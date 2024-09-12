@@ -7,21 +7,37 @@
 
 import UIKit
 
-protocol ExportPresentationControllerDelegate: AnyObject {
+protocol TodayPresentationControllerDelegate: AnyObject {
     func dismissController()
 }
 
 class TodayEventPresentationController: UIPresentationController {
-    var presentationDelegate: ExportPresentationControllerDelegate?
+    var presentationDelegate: TodayPresentationControllerDelegate?
     
     override init(presentedViewController: UIViewController, presenting presentingViewController: UIViewController?) {
         super.init(presentedViewController: presentedViewController, presenting: presentingViewController)
     }
     
     override var frameOfPresentedViewInContainerView: CGRect {
-        CGRect(origin: CGPoint(x: 0, y: self.containerView!.frame.height - 548),
-               size: CGSize(width: self.containerView!.frame.width, height: 548))
+        guard let presentedViewController = presentedViewController as? CreateClassViewController else { return .zero }
+        guard let containerView = containerView else { return .zero}
+        
+        let targetSize = CGSize(width: containerView.bounds.width, height: UIView.layoutFittingCompressedSize.height)
+        let fittingHeight = presentedViewController.contentView.systemLayoutSizeFitting(targetSize).height + 24
+                
+        if fittingHeight <= (containerView.bounds.height) * 0.9 {
+            return CGRect(x: 0, y: containerView.bounds.height - fittingHeight, width: containerView.bounds.width, height: fittingHeight)
+        } else { 
+            return CGRect(origin: CGPoint(x: 0, y: containerView.frame.height * 0.1),
+                          size: CGSize(width: containerView.frame.width, height: containerView.frame.height *
+                           0.9))
+        }
     }
+    
+    override func preferredContentSizeDidChange(forChildContentContainer container: UIContentContainer) {
+           guard let presentedViewController = presentedViewController as? UIViewController else { return }
+           presentedView?.frame = frameOfPresentedViewInContainerView
+       }
 
     override func presentationTransitionWillBegin() {
         self.presentedViewController.transitionCoordinator?.animate(alongsideTransition: { (UIViewControllerTransitionCoordinatorContext) in

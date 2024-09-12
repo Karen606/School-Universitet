@@ -12,10 +12,15 @@
         <!--Navigation Controller-->
         <scene sceneID="0bW-Dk-rE5">
             <objects>
-                <navigationController navigationBarHidden="YES" id="nQK-ka-AXS" sceneMemberID="viewController">
+                <navigationController id="nQK-ka-AXS" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="toJ-MP-0eg">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gPY-js-mey">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="pSE-hb-Y1n"/>
                     </connections>
@@ -33,7 +38,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OQ5-nO-3fZ">
-                                <rect key="frame" x="0.0" y="59" width="393" height="589"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="545"/>
                                 <connections>
                                     <segue destination="Vgt-ba-Gf2" kind="embed" id="BhL-d3-4SM"/>
                                 </connections>

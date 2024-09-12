@@ -24,6 +24,7 @@ class ClassesViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        setNavigationBar(title: "Classes")
         setupUI()
         subscribe()
     }
@@ -36,6 +37,7 @@ class ClassesViewController: UIViewController {
     func setupUI() {
         calendar.appearance.selectionColor = #colorLiteral(red: 0.7720025182, green: 0.2696399093, blue: 0.2442657351, alpha: 1)
         calendar.appearance.titleSelectionColor = .white
+        calendar.appearance.titleFont = .medium(size: 14)
         calendar.delegate = self
         calendar.dataSource = self
         backButton.titleLabel?.font = .medium(size: 14)
@@ -51,6 +53,26 @@ class ClassesViewController: UIViewController {
                 self?.view.layoutIfNeeded()
             }
             .store(in: &cancellables)
+    }
+    
+    @IBAction func createDay(_ sender: UIButton) {
+        let createClassesVC = CreateClassViewController(nibName: "CreateClassViewController", bundle: nil)
+        createClassesVC.modalPresentationStyle = .custom
+        createClassesVC.transitioningDelegate = self
+        createClassesVC.completion = { [weak self] in
+            guard let self = self else { return }
+            calendar.isHidden = false
+            self.viewModel.getDays()
+            CreateClassViewModel.shared.clear()
+        }
+        self.present(createClassesVC, animated: true)
+        calendar.isHidden = true
+    }
+    
+    @IBAction func clickedMenu(_ sender: UIButton) {
+        if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuViewController }) {
+            self.navigationController?.popToViewController(menuVC, animated: true)
+        }
     }
 }
 
@@ -69,11 +91,33 @@ extension ClassesViewController: FSCalendarDelegate, FSCalendarDataSource, FSCal
         if viewModel.days.contains(where: {$0.isActiveDay && $0.date == date }) {
             return .white
         } else if viewModel.days.contains(where: {!$0.isActiveDay && $0.date == date }) {
-            return #colorLiteral(red: 0.7720025182, green: 0.2696399093, blue: 0.2442657351, alpha: 1)
+            return #colorLiteral(red: 0.7921568627, green: 0, blue: 0, alpha: 1)
         }
         return nil
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+    }
+}
+
+extension ClassesViewController: UIViewControllerTransitioningDelegate {
+    func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+        switch presented {
+        case is CreateClassViewController:
+            let todayEventPresentationController = TodayEventPresentationController(presentedViewController: presented, presenting: presenting)
+            return todayEventPresentationController
+        default:
+            return nil
+        }
+    }
+}
+
+extension UIViewController {
+    func setNavigationBar(title: String) {
+        let titleLabel = UILabel()
+        titleLabel.text = title
+        titleLabel.textColor = .white
+        titleLabel.font = .semibold(size: 24)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: titleLabel)
     }
 }

@@ -11,14 +11,16 @@ import UIKit
 
 class ClassesViewModel {
     static let shared = ClassesViewModel()
-    @Published var days: [Day] = []
+    @Published var days: [DayModel] = []
     
     private init() {
         getDays()
     }
     
     func getDays() {
-        self.days = CoreDataManager.shared.fetchDays()
+        if let data = UserDefaults.standard.data(forKey: .days),
+           let decodedData = try? JSONDecoder().decode([DayModel].self, from: data) {
+            days = decodedData
+        }
     }
-    
 }

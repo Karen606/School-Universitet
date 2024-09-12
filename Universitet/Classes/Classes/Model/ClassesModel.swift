@@ -7,22 +7,33 @@
 
 import Foundation
 
-struct DayModel {
+struct DayModel: Codable {
     var isActiveDay: Bool
     var date: Date
     var dayName: String?
-    var classes: [Class]?
+    var classes: [Classes]?
     var note: String
-    var mood: String
+    var mood: Mood
 }
 
-struct Class {
+struct Classes: Codable {
     var name: String
     var date: String
 }
 
-//enum Mood {
-//    case good
-//    case medium
-//    case poor
-//}
+enum Mood: Int, CaseIterable, Codable {
+    case good
+    case medium
+    case poor
+    
+    var id: String {
+        switch self {
+        case .good:
+            return "good"
+        case .medium:
+            return "medium"
+        case .poor:
+            return "poor"
+        }
+    }
+}

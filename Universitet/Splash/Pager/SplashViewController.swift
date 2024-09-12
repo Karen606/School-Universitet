@@ -23,6 +23,7 @@ class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.hidesBackButton = true
         setCurrentPage(index: 0)
         nextButton.titleLabel?.font = .semibold(size: 18)
         termsOfUse.titleLabel?.font = .medium(size: 12)

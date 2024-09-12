@@ -45,6 +45,10 @@
 		6B2EADE62C9212C500E06679 /* CreateClassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B2EADE52C9212C500E06679 /* CreateClassViewController.xib */; };
 		6B2EADE72C9212C500E06679 /* CreateClassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2EADE42C9212C500E06679 /* CreateClassViewController.swift */; };
 		6B2EADE92C92130000E06679 /* BaseTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B2EADE82C92130000E06679 /* BaseTextField.swift */; };
+		6BE308AA2C930BB40092E595 /* DayInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE308A92C930BB40092E595 /* DayInfoViewController.xib */; };
+		6BE308AB2C930BB40092E595 /* DayInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308A82C930BB40092E595 /* DayInfoViewController.swift */; };
+		6BE308AF2C9318E70092E595 /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE308AE2C9318E70092E595 /* NotesTableViewCell.xib */; };
+		6BE308B02C9318E70092E595 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308AD2C9318E70092E595 /* NotesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +90,10 @@
 		6B2EADE42C9212C500E06679 /* CreateClassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateClassViewController.swift; sourceTree = "<group>"; };
 		6B2EADE52C9212C500E06679 /* CreateClassViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreateClassViewController.xib; sourceTree = "<group>"; };
 		6B2EADE82C92130000E06679 /* BaseTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTextField.swift; sourceTree = "<group>"; };
+		6BE308A82C930BB40092E595 /* DayInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayInfoViewController.swift; sourceTree = "<group>"; };
+		6BE308A92C930BB40092E595 /* DayInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayInfoViewController.xib; sourceTree = "<group>"; };
+		6BE308AD2C9318E70092E595 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
+		6BE308AE2C9318E70092E595 /* NotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +208,7 @@
 		6B14FEAA2C91C2B200961B01 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				6BE308A62C930B940092E595 /* DayInfo */,
 				6B2EADE22C92129E00E06679 /* CreateClass */,
 				6B14FEB42C91D07500961B01 /* Classes */,
 			);
@@ -288,6 +297,33 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		6BE308A62C930B940092E595 /* DayInfo */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308AC2C9318D50092E595 /* Cell */,
+				6BE308A72C930B9E0092E595 /* View */,
+			);
+			path = DayInfo;
+			sourceTree = "<group>";
+		};
+		6BE308A72C930B9E0092E595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308A82C930BB40092E595 /* DayInfoViewController.swift */,
+				6BE308A92C930BB40092E595 /* DayInfoViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BE308AC2C9318D50092E595 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308AD2C9318E70092E595 /* NotesTableViewCell.swift */,
+				6BE308AE2C9318E70092E595 /* NotesTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -358,6 +394,7 @@
 				6B07EFE02C9199F800F5AC5A /* Assets.xcassets in Resources */,
 				6B07EFF22C91A25C00F5AC5A /* SFProText-Medium.ttf in Resources */,
 				6B07EFF52C91A26300F5AC5A /* SFProText-Regular.ttf in Resources */,
+				6BE308AA2C930BB40092E595 /* DayInfoViewController.xib in Resources */,
 				6B07EFF32C91A25E00F5AC5A /* SFProText-Bold.ttf in Resources */,
 				6B14FE9C2C91AC3300961B01 /* WelcomeViewController.xib in Resources */,
 				6B07F0022C91A41C00F5AC5A /* SecondSplashViewController.xib in Resources */,
@@ -368,6 +405,7 @@
 				6B07EFDE2C9199F700F5AC5A /* Base in Resources */,
 				6B07EFF42C91A26100F5AC5A /* SFProText-Semibold.ttf in Resources */,
 				6B14FEA72C91BE7900961B01 /* Splash.storyboard in Resources */,
+				6BE308AF2C9318E70092E595 /* NotesTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,10 +427,12 @@
 				6B2EADE72C9212C500E06679 /* CreateClassViewController.swift in Sources */,
 				6B17C58C2C921E130084F6E0 /* ClassesTableViewCell.swift in Sources */,
 				6B2EADE92C92130000E06679 /* BaseTextField.swift in Sources */,
+				6BE308B02C9318E70092E595 /* NotesTableViewCell.swift in Sources */,
 				6B07EFD72C9199F600F5AC5A /* AppDelegate.swift in Sources */,
 				6B07EFFD2C91A33F00F5AC5A /* SecondSplashViewController.swift in Sources */,
 				6B17C5962C924BF70084F6E0 /* BaseTextView.swift in Sources */,
 				6B14FEAE2C91C2C200961B01 /* ClassesViewController.swift in Sources */,
+				6BE308AB2C930BB40092E595 /* DayInfoViewController.swift in Sources */,
 				6B14FE992C91A97A00961B01 /* Font.swift in Sources */,
 				6B14FEB82C91D16800961B01 /* ClassesModel.swift in Sources */,
 				6B14FEBB2C91D3D500961B01 /* ClassesViewModel.swift in Sources */,

@@ -29,11 +29,11 @@ enum Mood: Int, CaseIterable, Codable {
     var id: String {
         switch self {
         case .good:
-            return "good"
+            return "Good"
         case .medium:
-            return "medium"
+            return "Medium"
         case .poor:
-            return "poor"
+            return "Poor"
         }
     }
 }

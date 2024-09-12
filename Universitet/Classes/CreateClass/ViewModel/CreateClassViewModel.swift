@@ -15,7 +15,7 @@ class CreateClassViewModel {
     @Published var mood: Mood?
     @Published var isValidate: Bool = false
     
-    var date: Date = Date.currentDay()
+    var date: Date?
     var dayName: String?
     var note: String?
     var previousClassesCount: Int = 0
@@ -58,7 +58,7 @@ class CreateClassViewModel {
     }
     
     func createClasses() -> Bool {
-        guard let mood = self.mood, let note = self.note else { return false }
+        guard let mood = self.mood, let note = self.note, let date = date else { return false }
         dayModel = DayModel(isActiveDay: isActiveDay, date: date, dayName: dayName, classes: classes, note: note, mood: mood)
         var daysModel: [DayModel] = []
         if let data = UserDefaults.standard.data(forKey: .days),
@@ -87,6 +87,7 @@ class CreateClassViewModel {
     }
     
     func clear() {
+        dayModel = nil
         isActiveDay = true
         classes = [Classes(name: "", date: "")]
         mood = nil
@@ -95,5 +96,6 @@ class CreateClassViewModel {
         dayName = nil
         note = nil
         previousClassesCount = 0
+        date = nil
     }
 }

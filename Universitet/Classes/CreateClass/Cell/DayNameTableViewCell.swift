@@ -28,6 +28,11 @@ class DayNameTableViewCell: UITableViewCell {
     func setupContent(name: String?) {
         self.nameTextField.text = name
     }
+    
+    func setupContentForRead(name: String?) {
+        self.nameTextField.text = name
+        self.nameTextField.isEnabled = false
+    }
 }
 
 extension DayNameTableViewCell: UITextFieldDelegate {

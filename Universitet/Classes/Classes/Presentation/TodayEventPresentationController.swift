@@ -19,8 +19,13 @@ class TodayEventPresentationController: UIPresentationController {
     }
     
     override var frameOfPresentedViewInContainerView: CGRect {
-        guard let presentedViewController = presentedViewController as? CreateClassViewController else { return .zero }
         guard let containerView = containerView else { return .zero}
+        if let presentedViewController = presentedViewController as? DayInfoViewController {
+            return CGRect(origin: CGPoint(x: 0, y: containerView.frame.height * 0.5),
+                          size: CGSize(width: containerView.frame.width, height: containerView.frame.height *
+                           0.5))
+        }
+        guard let presentedViewController = presentedViewController as? CreateClassViewController else { return .zero }
         
         let targetSize = CGSize(width: containerView.bounds.width, height: UIView.layoutFittingCompressedSize.height)
         let fittingHeight = presentedViewController.contentView.systemLayoutSizeFitting(targetSize).height + 24

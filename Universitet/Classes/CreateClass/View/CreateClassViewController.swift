@@ -26,6 +26,7 @@ class CreateClassViewController: UIViewController {
     @IBOutlet weak var addBUtton: UIButton!
     @IBOutlet weak var noteHeightConst: NSLayoutConstraint!
     @IBOutlet weak var notesLabel: UILabel!
+    var handleClose: (() -> ())?
     var completion: (() -> ())?
     private let viewModel = CreateClassViewModel.shared
     private var cancellables: Set<AnyCancellable> = []
@@ -67,6 +68,7 @@ class CreateClassViewController: UIViewController {
         mediumButton.titleLabel?.font = .medium(size: 16)
         poorButton.titleLabel?.font = .medium(size: 16)
         createButton.titleLabel?.font = .medium(size: 14)
+        noteTextView.font = .medium(size: 18)
         noteTextView.baseDelegate = self
         noteTextView.placeholder = "Notes"
         let buttons = [goodButton, mediumButton, poorButton]
@@ -164,7 +166,7 @@ class CreateClassViewController: UIViewController {
     }
     
     @IBAction func clickedClose(_ sender: UIButton) {
-        self.dismiss(animated: true, completion: completion)
+        self.dismiss(animated: true, completion: handleClose)
     }
     
     @IBAction func clickedCreate(_ sender: UIButton) {

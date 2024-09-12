@@ -49,20 +49,45 @@ class ClassesViewController: UIViewController {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] days in
                 self?.calendar.reloadData()
-                self?.todayEventView.isHidden = days.contains(where: { $0.date == Date.currentDay() })
+                if let selectedDate = self?.calendar.selectedDate {
+                    self?.todayEventView.isHidden = days.contains(where: { $0.date == selectedDate })
+                } else {
+                    self?.todayEventView.isHidden = true
+                }
                 self?.view.layoutIfNeeded()
             }
             .store(in: &cancellables)
+    }
+    
+    func showDayInfo(dayModel: DayModel) {
+        let dayInfoVC = DayInfoViewController(nibName: "DayInfoViewController", bundle: nil)
+        dayInfoVC.modalPresentationStyle = .custom
+        dayInfoVC.transitioningDelegate = self
+        dayInfoVC.dayModel = dayModel
+        dayInfoVC.compeltion = { [weak self] in
+            guard let self = self else { return }
+            calendar.deselect(dayModel.date)
+        }
+        self.present(dayInfoVC, animated: true)
     }
     
     @IBAction func createDay(_ sender: UIButton) {
         let createClassesVC = CreateClassViewController(nibName: "CreateClassViewController", bundle: nil)
         createClassesVC.modalPresentationStyle = .custom
         createClassesVC.transitioningDelegate = self
+        CreateClassViewModel.shared.date = calendar.selectedDate
         createClassesVC.completion = { [weak self] in
             guard let self = self else { return }
+            if let selectedDate = self.calendar.selectedDate {
+                calendar.deselect(selectedDate)
+            }
             calendar.isHidden = false
             self.viewModel.getDays()
+            CreateClassViewModel.shared.clear()
+        }
+        createClassesVC.handleClose = { [weak self] in
+            guard let self = self else { return }
+            calendar.isHidden = false
             CreateClassViewModel.shared.clear()
         }
         self.present(createClassesVC, animated: true)
@@ -97,6 +122,12 @@ extension ClassesViewController: FSCalendarDelegate, FSCalendarDataSource, FSCal
     }
     
     func calendar(_ calendar: FSCalendar, didSelect date: Date, at monthPosition: FSCalendarMonthPosition) {
+        if let dayModel = viewModel.days.first(where: { $0.date == date }) {
+            self.todayEventView.isHidden = true
+            showDayInfo(dayModel: dayModel)
+        } else {
+            self.todayEventView.isHidden = false
+        }
     }
 }
 
@@ -104,6 +135,9 @@ extension ClassesViewController: UIViewControllerTransitioningDelegate {
     func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
         switch presented {
         case is CreateClassViewController:
+            let todayEventPresentationController = TodayEventPresentationController(presentedViewController: presented, presenting: presenting)
+            return todayEventPresentationController
+        case is DayInfoViewController:
             let todayEventPresentationController = TodayEventPresentationController(presentedViewController: presented, presenting: presenting)
             return todayEventPresentationController
         default:

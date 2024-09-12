@@ -40,8 +40,15 @@ class ClassesTableViewCell: UITableViewCell {
         hourPicker.datePickerMode = .time
         hourPicker.preferredDatePickerStyle = .wheels
         hourPicker.addTarget(self, action: #selector(hourPickerValueChanged(sender:)), for: .valueChanged)
-        hourPicker.minimumDate = Calendar.current.date(byAdding: .hour, value: 0, to: Date())
         hourPicker.tintColor = UIColor(named: "CustomRed")
+    }
+    
+    func setupContentForRead(model: Classes?, index: Int) {
+        self.backgroundColor = .clear
+        self.nameTextField.text = model?.name
+        self.dateTextField.text = model?.date
+        self.nameTextField.isEnabled = false
+        self.dateTextField.isEnabled = false
     }
     
     @objc func hourPickerValueChanged(sender: UIDatePicker) {

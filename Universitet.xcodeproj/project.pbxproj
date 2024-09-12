@@ -49,6 +49,13 @@
 		6BE308AB2C930BB40092E595 /* DayInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308A82C930BB40092E595 /* DayInfoViewController.swift */; };
 		6BE308AF2C9318E70092E595 /* NotesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE308AE2C9318E70092E595 /* NotesTableViewCell.xib */; };
 		6BE308B02C9318E70092E595 /* NotesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308AD2C9318E70092E595 /* NotesTableViewCell.swift */; };
+		6BE308B52C9334650092E595 /* NotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE308B42C9334650092E595 /* NotesViewController.xib */; };
+		6BE308B62C9334650092E595 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308B32C9334650092E595 /* NotesViewController.swift */; };
+		6BE308B92C9334A40092E595 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308B82C9334A40092E595 /* NotesViewModel.swift */; };
+		6BE308BD2C9335CE0092E595 /* NoteTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE308BC2C9335CE0092E595 /* NoteTableViewCell.xib */; };
+		6BE308BE2C9335CE0092E595 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308BB2C9335CE0092E595 /* NoteTableViewCell.swift */; };
+		6BE308C12C9342250092E595 /* NoteDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308C02C9342250092E595 /* NoteDropDownView.swift */; };
+		6BE308C52C9342C20092E595 /* NoteDropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE308C42C9342C20092E595 /* NoteDropDownView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -94,6 +101,13 @@
 		6BE308A92C930BB40092E595 /* DayInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayInfoViewController.xib; sourceTree = "<group>"; };
 		6BE308AD2C9318E70092E595 /* NotesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewCell.swift; sourceTree = "<group>"; };
 		6BE308AE2C9318E70092E595 /* NotesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesTableViewCell.xib; sourceTree = "<group>"; };
+		6BE308B32C9334650092E595 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		6BE308B42C9334650092E595 /* NotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesViewController.xib; sourceTree = "<group>"; };
+		6BE308B82C9334A40092E595 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		6BE308BB2C9335CE0092E595 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		6BE308BC2C9335CE0092E595 /* NoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
+		6BE308C02C9342250092E595 /* NoteDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDropDownView.swift; sourceTree = "<group>"; };
+		6BE308C42C9342C20092E595 /* NoteDropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDropDownView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +141,7 @@
 		6B07EFD52C9199F600F5AC5A /* Universitet */ = {
 			isa = PBXGroup;
 			children = (
+				6BE308B12C9334440092E595 /* Notes */,
 				6B14FEAA2C91C2B200961B01 /* Classes */,
 				6B14FE9E2C91AFB600961B01 /* Menu */,
 				6B07EFFE2C91A3B700F5AC5A /* Extensions */,
@@ -324,6 +339,52 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		6BE308B12C9334440092E595 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308BF2C9342090092E595 /* DropDown */,
+				6BE308BA2C9335B90092E595 /* Cell */,
+				6BE308B72C9334720092E595 /* ViewModel */,
+				6BE308B22C9334570092E595 /* View */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		6BE308B22C9334570092E595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308B32C9334650092E595 /* NotesViewController.swift */,
+				6BE308B42C9334650092E595 /* NotesViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BE308B72C9334720092E595 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308B82C9334A40092E595 /* NotesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6BE308BA2C9335B90092E595 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308BB2C9335CE0092E595 /* NoteTableViewCell.swift */,
+				6BE308BC2C9335CE0092E595 /* NoteTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		6BE308BF2C9342090092E595 /* DropDown */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308C02C9342250092E595 /* NoteDropDownView.swift */,
+				6BE308C42C9342C20092E595 /* NoteDropDownView.xib */,
+			);
+			path = DropDown;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -391,6 +452,7 @@
 				6B17C58D2C921E130084F6E0 /* ClassesTableViewCell.xib in Resources */,
 				6B07F0012C91A41900F5AC5A /* FirstSplashViewController.xib in Resources */,
 				6B14FEAD2C91C2C200961B01 /* ClassesViewController.xib in Resources */,
+				6BE308BD2C9335CE0092E595 /* NoteTableViewCell.xib in Resources */,
 				6B07EFE02C9199F800F5AC5A /* Assets.xcassets in Resources */,
 				6B07EFF22C91A25C00F5AC5A /* SFProText-Medium.ttf in Resources */,
 				6B07EFF52C91A26300F5AC5A /* SFProText-Regular.ttf in Resources */,
@@ -402,7 +464,9 @@
 				6B2EADE62C9212C500E06679 /* CreateClassViewController.xib in Resources */,
 				6B17C5912C921FAF0084F6E0 /* DayNameTableViewCell.xib in Resources */,
 				6B07EFE32C9199F800F5AC5A /* Base in Resources */,
+				6BE308B52C9334650092E595 /* NotesViewController.xib in Resources */,
 				6B07EFDE2C9199F700F5AC5A /* Base in Resources */,
+				6BE308C52C9342C20092E595 /* NoteDropDownView.xib in Resources */,
 				6B07EFF42C91A26100F5AC5A /* SFProText-Semibold.ttf in Resources */,
 				6B14FEA72C91BE7900961B01 /* Splash.storyboard in Resources */,
 				6BE308AF2C9318E70092E595 /* NotesTableViewCell.xib in Resources */,
@@ -417,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B14FEF82C91EE4E00961B01 /* TodayEventPresentationController.swift in Sources */,
+				6BE308BE2C9335CE0092E595 /* NoteTableViewCell.swift in Sources */,
 				6B14FE9D2C91AC3300961B01 /* WelcomeViewController.swift in Sources */,
 				6B14FEA62C91B0C800961B01 /* MenuViewController.swift in Sources */,
 				6B17C5942C9229810084F6E0 /* CreateClassViewModel.swift in Sources */,
@@ -427,7 +492,9 @@
 				6B2EADE72C9212C500E06679 /* CreateClassViewController.swift in Sources */,
 				6B17C58C2C921E130084F6E0 /* ClassesTableViewCell.swift in Sources */,
 				6B2EADE92C92130000E06679 /* BaseTextField.swift in Sources */,
+				6BE308B92C9334A40092E595 /* NotesViewModel.swift in Sources */,
 				6BE308B02C9318E70092E595 /* NotesTableViewCell.swift in Sources */,
+				6BE308C12C9342250092E595 /* NoteDropDownView.swift in Sources */,
 				6B07EFD72C9199F600F5AC5A /* AppDelegate.swift in Sources */,
 				6B07EFFD2C91A33F00F5AC5A /* SecondSplashViewController.swift in Sources */,
 				6B17C5962C924BF70084F6E0 /* BaseTextView.swift in Sources */,
@@ -436,6 +503,7 @@
 				6B14FE992C91A97A00961B01 /* Font.swift in Sources */,
 				6B14FEB82C91D16800961B01 /* ClassesModel.swift in Sources */,
 				6B14FEBB2C91D3D500961B01 /* ClassesViewModel.swift in Sources */,
+				6BE308B62C9334650092E595 /* NotesViewController.swift in Sources */,
 				6B07EFD92C9199F600F5AC5A /* SceneDelegate.swift in Sources */,
 				6B07EFFC2C91A33C00F5AC5A /* FirstSplashViewController.swift in Sources */,
 				6B14FEA92C91BF9900961B01 /* SplashViewController.swift in Sources */,

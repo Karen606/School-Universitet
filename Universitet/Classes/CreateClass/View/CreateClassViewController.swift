@@ -95,6 +95,10 @@ class CreateClassViewController: UIViewController {
         classesTableView.isHidden = !viewModel.isActiveDay
         noteHeightConst.constant = viewModel.isActiveDay ? 56 : 120
         notesLabel.text = viewModel.isActiveDay ? "Mini notes" : "Notes"
+        self.classesTableView.reloadData()
+        self.classesTableView.layoutIfNeeded()
+        self.tableViewHeightConst.constant = self.classesTableView.contentSize.height
+        updatePreferredContentSize()
     }
     
     func subscribe() {
@@ -200,7 +204,7 @@ extension CreateClassViewController: UITableViewDelegate, UITableViewDataSource 
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "DayNameTableViewCell", for: indexPath) as! DayNameTableViewCell
-            cell.setupContent(name: viewModel.dayModel?.dayName)
+            cell.setupContent(name: viewModel.dayName)
             cell.delegate = self
             return cell
         case 1:

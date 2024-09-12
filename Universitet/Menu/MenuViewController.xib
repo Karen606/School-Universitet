@@ -101,7 +101,6 @@
                                 </userDefinedRuntimeAttribute>
                             </userDefinedRuntimeAttributes>
                             <connections>
-                                <action selector="clickedFacts:" destination="-1" eventType="touchUpInside" id="o9M-0x-5Kz"/>
                                 <action selector="clickedSettings:" destination="-1" eventType="touchUpInside" id="mwL-Eb-c3r"/>
                             </connections>
                         </button>

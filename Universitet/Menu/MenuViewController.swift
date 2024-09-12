@@ -34,7 +34,7 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func clickedSettings(_ sender: UIButton) {
-//        let notesVC = NotesViewController(nibName: "NotesViewController", bundle: nil)
-//        navigationController?.pushViewController(notesVC, animated: true)
+        let settingsVC = SettingsViewController(nibName: "SettingsViewController", bundle: nil)
+        navigationController?.pushViewController(settingsVC, animated: true)
     }
 }

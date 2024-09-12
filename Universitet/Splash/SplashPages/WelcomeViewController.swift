@@ -14,9 +14,10 @@ class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true
         titleLabel.font = .bold(size: 32)
         descriptionLabel.font = .bold(size: 24)
-        Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { _ in
+        Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
             let menuVC = MenuViewController(nibName: "MenuViewController", bundle: nil)
             self.navigationController?.viewControllers = [menuVC]
         }

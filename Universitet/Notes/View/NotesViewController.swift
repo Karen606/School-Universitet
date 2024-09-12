@@ -37,21 +37,17 @@ class NotesViewController: UIViewController {
             .store(in: &cancellables)
     }
     
-    func showDropDown(below cell: UITableViewCell?, in tableView: UITableView, note: String) {
+    func showDropDown(below cell: UITableViewCell?, in tableView: UITableView, index: Int) {
         guard let cell = cell else { return }
         let cellFrameInTableView = tableView.convert(cell.frame, to: tableView)
         var dropdownOriginY = cellFrameInTableView.maxY
         
         let dropdown = createDropDownView()
-        dropdown.commonInit(note: note)
+        dropdown.commonInit(note: viewModel.activeDates[index].note, mood: viewModel.activeDates[index].mood)
         let cellFrameInWindow = tableView.convert(cell.frame, to: view)
         if (dropdownOriginY + 290) > tableView.frame.height {
             dropdownOriginY = cellFrameInTableView.minY - 290
         }
-//        var origin = CGPoint(x: 50, y: cellFrameInWindow.maxY)
-//        if (cellFrameInWindow.maxY + 290) > view.frame.height {
-//            origin = CGPoint(x: 50, y: cellFrameInWindow.minY - 290)
-//        }
         dropdown.frame = CGRect(x: 50,
                                 y: dropdownOriginY,
                                 width: cellFrameInWindow.width - 100,
@@ -106,16 +102,22 @@ extension NotesViewController: UITableViewDelegate, UITableViewDataSource {
         if selectedIndexPath == indexPath {
             if let dropdown = dropdownView {
                 hideDropdown(dropdown)
+                if let cell = tableView.cellForRow(at: indexPath) as? NoteTableViewCell {
+                    cell.arrowImageView.isHighlighted = false
+                }
             }
             selectedIndexPath = nil
         } else {
             if let dropdown = dropdownView {
                 hideDropdown(dropdown)
+                if let notesCell = tableView.cellForRow(at: selectedIndexPath!) as? NoteTableViewCell {
+                    notesCell.arrowImageView.isHighlighted = false
+                }
             }
-            let cell = tableView.cellForRow(at: indexPath)
-            showDropDown(below: cell, in: tableView, note: viewModel.activeDates[indexPath.row].note)
+            let cell = tableView.cellForRow(at: indexPath) as? NoteTableViewCell
+            showDropDown(below: cell, in: tableView, index: indexPath.section)
+            cell?.arrowImageView.isHighlighted = true
             selectedIndexPath = indexPath
         }
     }
-    
 }

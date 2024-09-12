@@ -94,6 +94,13 @@ class ClassesViewController: UIViewController {
         calendar.isHidden = true
     }
     
+    @IBAction func clickedBack(_ sender: UIButton) {
+        if let selectedDate = calendar.selectedDate {
+            calendar.deselect(selectedDate)
+            self.todayEventView.isHidden = true
+        }
+    }
+    
     @IBAction func clickedMenu(_ sender: UIButton) {
         if let menuVC = navigationController?.viewControllers.first(where: { $0 is MenuViewController }) {
             self.navigationController?.popToViewController(menuVC, animated: true)

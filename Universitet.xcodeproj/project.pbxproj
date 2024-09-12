@@ -26,6 +26,8 @@
 		6B086BCB2C93638C00E1B538 /* FactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B086BC92C93638C00E1B538 /* FactViewController.swift */; };
 		6B086BCC2C93638C00E1B538 /* FactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B086BCA2C93638C00E1B538 /* FactViewController.xib */; };
 		6B086BCF2C936B2B00E1B538 /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B086BCE2C936B2B00E1B538 /* FactsViewModel.swift */; };
+		6B086BD42C936CC600E1B538 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B086BD22C936CC600E1B538 /* SettingsViewController.swift */; };
+		6B086BD52C936CC600E1B538 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B086BD32C936CC600E1B538 /* SettingsViewController.xib */; };
 		6B14FE992C91A97A00961B01 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FE982C91A97A00961B01 /* Font.swift */; };
 		6B14FE9C2C91AC3300961B01 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B14FE9B2C91AC3300961B01 /* WelcomeViewController.xib */; };
 		6B14FE9D2C91AC3300961B01 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FE9A2C91AC3300961B01 /* WelcomeViewController.swift */; };
@@ -88,6 +90,8 @@
 		6B086BC92C93638C00E1B538 /* FactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewController.swift; sourceTree = "<group>"; };
 		6B086BCA2C93638C00E1B538 /* FactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactViewController.xib; sourceTree = "<group>"; };
 		6B086BCE2C936B2B00E1B538 /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
+		6B086BD22C936CC600E1B538 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6B086BD32C936CC600E1B538 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		6B14FE982C91A97A00961B01 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		6B14FE9A2C91AC3300961B01 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		6B14FE9B2C91AC3300961B01 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
@@ -157,6 +161,7 @@
 		6B07EFD52C9199F600F5AC5A /* Universitet */ = {
 			isa = PBXGroup;
 			children = (
+				6B086BD02C936CB400E1B538 /* Settings */,
 				6BE308C62C9359760092E595 /* Facts */,
 				6BE308B12C9334440092E595 /* Notes */,
 				6B14FEAA2C91C2B200961B01 /* Classes */,
@@ -270,6 +275,23 @@
 				6B086BCE2C936B2B00E1B538 /* FactsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B086BD02C936CB400E1B538 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6B086BD12C936CBA00E1B538 /* View */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6B086BD12C936CBA00E1B538 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B086BD22C936CC600E1B538 /* SettingsViewController.swift */,
+				6B086BD32C936CC600E1B538 /* SettingsViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		6B14FE9E2C91AFB600961B01 /* Menu */ = {
@@ -546,6 +568,7 @@
 				6B07EFF22C91A25C00F5AC5A /* SFProText-Medium.ttf in Resources */,
 				6BE308CA2C9359A00092E595 /* FactsViewController.xib in Resources */,
 				6B07EFF52C91A26300F5AC5A /* SFProText-Regular.ttf in Resources */,
+				6B086BD52C936CC600E1B538 /* SettingsViewController.xib in Resources */,
 				6BE308AA2C930BB40092E595 /* DayInfoViewController.xib in Resources */,
 				6B07EFF32C91A25E00F5AC5A /* SFProText-Bold.ttf in Resources */,
 				6B14FE9C2C91AC3300961B01 /* WelcomeViewController.xib in Resources */,
@@ -573,6 +596,7 @@
 			files = (
 				6B14FEF82C91EE4E00961B01 /* TodayEventPresentationController.swift in Sources */,
 				6BE308BE2C9335CE0092E595 /* NoteTableViewCell.swift in Sources */,
+				6B086BD42C936CC600E1B538 /* SettingsViewController.swift in Sources */,
 				6B14FE9D2C91AC3300961B01 /* WelcomeViewController.swift in Sources */,
 				6B086BC52C9361BE00E1B538 /* FactModel.swift in Sources */,
 				6B14FEA62C91B0C800961B01 /* MenuViewController.swift in Sources */,

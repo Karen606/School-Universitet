@@ -59,7 +59,11 @@ class CreateClassViewModel {
     
     func createClasses() -> Bool {
         guard let mood = self.mood, let note = self.note, let date = date else { return false }
-        dayModel = DayModel(isActiveDay: isActiveDay, date: date, dayName: dayName, classes: classes, note: note, mood: mood)
+        if isActiveDay {
+            dayModel = DayModel(isActiveDay: isActiveDay, date: date, dayName: dayName, classes: classes, note: note, mood: mood)
+        } else {
+            dayModel = DayModel(isActiveDay: isActiveDay, date: date, note: note, mood: mood)
+        }
         var daysModel: [DayModel] = []
         if let data = UserDefaults.standard.data(forKey: .days),
            let decodedProjects = try? JSONDecoder().decode([DayModel].self, from: data) {
@@ -80,7 +84,7 @@ class CreateClassViewModel {
             isValidate = (mood != nil && !(note?.isEmpty ?? true))
             return
         }
-        guard let mood = self.mood, let dayName = self.dayName, let note = self.note else { isValidate = false
+        guard let mood = self.mood, let dayName = self.dayName, let note = self.note, !classes.contains(where: { $0.name.isEmpty || $0.date.isEmpty }) else { isValidate = false
             return
         }
         isValidate = classes.contains(where: { !$0.name.isEmpty && !$0.date.isEmpty }) && !dayName.isEmpty && !note.isEmpty

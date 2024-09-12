@@ -77,7 +77,7 @@ extension DayInfoViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
-            return dayModel.classes?.count ?? 0
+            return dayModel.classes?.count ?? 1
         case 1:
             return 1
         default:

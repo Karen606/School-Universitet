@@ -75,6 +75,7 @@ class SplashViewController: UIViewController {
         if currentIndex == 0 {
             setCurrentPage(index: 1)
         } else {
+            UserDefaults.standard.set(true, forKey: .hasLaunchedBeforeKey)
             let welcomeVC = WelcomeViewController(nibName: "WelcomeViewController", bundle: nil)
             self.navigationController?.pushViewController(welcomeVC, animated: true)
         }

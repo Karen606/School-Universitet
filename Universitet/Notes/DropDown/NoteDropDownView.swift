@@ -23,7 +23,7 @@ class NoteDropDownView: UIView {
         super.init(coder: aDecoder)
     }
 
-    func commonInit(note: String) {
+    func commonInit(note: String, mood: Mood) {
         notesLabel.font = .medium(size: 18)
         moodLabel.font = .medium(size: 18)
         moodButton.titleLabel?.font = .medium(size: 16)
@@ -35,7 +35,15 @@ class NoteDropDownView: UIView {
         self.layer.masksToBounds = true
         contentView.layer.cornerRadius = 12
         contentView.layer.masksToBounds = true
-
+        moodButton.setTitle(mood.id, for: .normal)
+        switch mood {
+        case .good:
+            moodButton.backgroundColor = #colorLiteral(red: 0.003921568627, green: 0.6078431373, blue: 0.02745098039, alpha: 1)
+        case .medium:
+            moodButton.backgroundColor = #colorLiteral(red: 0.5568627451, green: 0.3607843137, blue: 0.1254901961, alpha: 1)
+        case .poor:
+            moodButton.backgroundColor = #colorLiteral(red: 0.7921568627, green: 0, blue: 0, alpha: 1)
+        }
     }
   
     class func instanceFromNib() -> NoteDropDownView {

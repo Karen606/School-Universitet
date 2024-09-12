@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FactViewController" customModule="Universitet" customModuleProvider="target">
+            <connections>
+                <outlet property="descriptionTextView" destination="wQw-5V-qid" id="W9V-Ej-CK4"/>
+                <outlet property="logoImageView" destination="S2i-bR-0Ep" id="xGh-wh-yn3"/>
+                <outlet property="titleLabel" destination="E3t-Ry-PR0" id="EJg-Dk-AOT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S2i-bR-0Ep">
+                    <rect key="frame" x="30" y="75" width="333" height="130"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="130" id="uiX-vD-Yxp"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E3t-Ry-PR0">
+                    <rect key="frame" x="30" y="221" width="333" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" name="BackgroundColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="wQw-5V-qid">
+                    <rect key="frame" x="30" y="241" width="333" height="577"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <mutableString key="text">1.
+Start school in the summer. There is no single date for the beginning of the school year in the United States: it is different in each state, the main thing is that schoolchildren study for at least 180 days in total. Somewhere they sit at their desks at the end of July, somewhere - in early August, and most often - at the end of August. Only in rare cases the school year starts in September.
+2. 
+They go to school from the age of 5. All children who have turned 5 are sent to the zero class, and in some schools there are even classes for kids 3-4 years old. During their school life pupils change at least 3 educational institutions: after the 5th grade they are transferred to secondary school, and after the 8th grade - to high school.
+3.
+They choose their own subjects. In secondary school there are only 5 compulsory subjects: math, English, natural sciences, social sciences and physical education. The rest of the subjects the child chooses from the proposed list and further studies according to an individual schedule.</mutableString>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="E3t-Ry-PR0" firstAttribute="top" secondItem="S2i-bR-0Ep" secondAttribute="bottom" constant="16" id="Jv2-8X-xgH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wQw-5V-qid" secondAttribute="bottom" id="UZT-Sj-f3P"/>
+                <constraint firstItem="S2i-bR-0Ep" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="YGM-Ne-SDZ"/>
+                <constraint firstItem="wQw-5V-qid" firstAttribute="top" secondItem="E3t-Ry-PR0" secondAttribute="bottom" constant="20" id="gH8-ca-BGX"/>
+                <constraint firstItem="wQw-5V-qid" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="j7l-Bg-6xJ"/>
+                <constraint firstItem="E3t-Ry-PR0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="l6e-ge-Ix0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wQw-5V-qid" secondAttribute="trailing" constant="30" id="loA-hE-YaZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="S2i-bR-0Ep" secondAttribute="trailing" constant="30" id="m0J-To-ec3"/>
+                <constraint firstItem="E3t-Ry-PR0" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="pxU-W9-K6V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="E3t-Ry-PR0" secondAttribute="trailing" constant="30" id="uSl-c4-qqY"/>
+                <constraint firstItem="S2i-bR-0Ep" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="wIL-Fj-dLw"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="BackgroundColor">
+            <color red="0.48199999332427979" green="0.18799999356269836" blue="0.71399998664855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

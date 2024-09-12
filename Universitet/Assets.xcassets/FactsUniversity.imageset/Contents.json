@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "sgos5g.png",
+      "filename" : "image.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "sgos5g@2x.png",
+      "filename" : "image@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "sgos5g@3x.png",
+      "filename" : "image@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

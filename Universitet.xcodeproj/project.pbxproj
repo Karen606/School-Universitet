@@ -22,6 +22,10 @@
 		6B07F0002C91A3C700F5AC5A /* UserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B07EFFF2C91A3C700F5AC5A /* UserDefaultsKeys.swift */; };
 		6B07F0012C91A41900F5AC5A /* FirstSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B07EFF72C91A2A200F5AC5A /* FirstSplashViewController.xib */; };
 		6B07F0022C91A41C00F5AC5A /* SecondSplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B07EFF92C91A2A700F5AC5A /* SecondSplashViewController.xib */; };
+		6B086BC52C9361BE00E1B538 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B086BC42C9361BE00E1B538 /* FactModel.swift */; };
+		6B086BCB2C93638C00E1B538 /* FactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B086BC92C93638C00E1B538 /* FactViewController.swift */; };
+		6B086BCC2C93638C00E1B538 /* FactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B086BCA2C93638C00E1B538 /* FactViewController.xib */; };
+		6B086BCF2C936B2B00E1B538 /* FactsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B086BCE2C936B2B00E1B538 /* FactsViewModel.swift */; };
 		6B14FE992C91A97A00961B01 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FE982C91A97A00961B01 /* Font.swift */; };
 		6B14FE9C2C91AC3300961B01 /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6B14FE9B2C91AC3300961B01 /* WelcomeViewController.xib */; };
 		6B14FE9D2C91AC3300961B01 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14FE9A2C91AC3300961B01 /* WelcomeViewController.swift */; };
@@ -56,6 +60,10 @@
 		6BE308BE2C9335CE0092E595 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308BB2C9335CE0092E595 /* NoteTableViewCell.swift */; };
 		6BE308C12C9342250092E595 /* NoteDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308C02C9342250092E595 /* NoteDropDownView.swift */; };
 		6BE308C52C9342C20092E595 /* NoteDropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE308C42C9342C20092E595 /* NoteDropDownView.xib */; };
+		6BE308CA2C9359A00092E595 /* FactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE308C92C9359A00092E595 /* FactsViewController.xib */; };
+		6BE308CB2C9359A00092E595 /* FactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308C82C9359A00092E595 /* FactsViewController.swift */; };
+		6BE308CF2C935A690092E595 /* FactTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BE308CE2C935A690092E595 /* FactTableViewCell.xib */; };
+		6BE308D02C935A690092E595 /* FactTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BE308CD2C935A690092E595 /* FactTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +84,10 @@
 		6B07EFF82C91A2A500F5AC5A /* SecondSplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondSplashViewController.swift; sourceTree = "<group>"; };
 		6B07EFF92C91A2A700F5AC5A /* SecondSplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondSplashViewController.xib; sourceTree = "<group>"; };
 		6B07EFFF2C91A3C700F5AC5A /* UserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsKeys.swift; sourceTree = "<group>"; };
+		6B086BC42C9361BE00E1B538 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		6B086BC92C93638C00E1B538 /* FactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactViewController.swift; sourceTree = "<group>"; };
+		6B086BCA2C93638C00E1B538 /* FactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactViewController.xib; sourceTree = "<group>"; };
+		6B086BCE2C936B2B00E1B538 /* FactsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewModel.swift; sourceTree = "<group>"; };
 		6B14FE982C91A97A00961B01 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		6B14FE9A2C91AC3300961B01 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		6B14FE9B2C91AC3300961B01 /* WelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
@@ -108,6 +120,10 @@
 		6BE308BC2C9335CE0092E595 /* NoteTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteTableViewCell.xib; sourceTree = "<group>"; };
 		6BE308C02C9342250092E595 /* NoteDropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDropDownView.swift; sourceTree = "<group>"; };
 		6BE308C42C9342C20092E595 /* NoteDropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteDropDownView.xib; sourceTree = "<group>"; };
+		6BE308C82C9359A00092E595 /* FactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactsViewController.swift; sourceTree = "<group>"; };
+		6BE308C92C9359A00092E595 /* FactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactsViewController.xib; sourceTree = "<group>"; };
+		6BE308CD2C935A690092E595 /* FactTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactTableViewCell.swift; sourceTree = "<group>"; };
+		6BE308CE2C935A690092E595 /* FactTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FactTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +157,7 @@
 		6B07EFD52C9199F600F5AC5A /* Universitet */ = {
 			isa = PBXGroup;
 			children = (
+				6BE308C62C9359760092E595 /* Facts */,
 				6BE308B12C9334440092E595 /* Notes */,
 				6B14FEAA2C91C2B200961B01 /* Classes */,
 				6B14FE9E2C91AFB600961B01 /* Menu */,
@@ -209,6 +226,50 @@
 				6B17C5952C924BF70084F6E0 /* BaseTextView.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6B086BC32C9361B400E1B538 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B086BC42C9361BE00E1B538 /* FactModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B086BC62C93635B00E1B538 /* FactsList */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308CC2C935A4C0092E595 /* Cell */,
+				6B086BC32C9361B400E1B538 /* Model */,
+				6BE308C72C9359870092E595 /* View */,
+			);
+			path = FactsList;
+			sourceTree = "<group>";
+		};
+		6B086BC72C93637600E1B538 /* Fact */ = {
+			isa = PBXGroup;
+			children = (
+				6B086BCD2C936B1C00E1B538 /* ViewModel */,
+				6B086BC82C93637B00E1B538 /* View */,
+			);
+			path = Fact;
+			sourceTree = "<group>";
+		};
+		6B086BC82C93637B00E1B538 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B086BC92C93638C00E1B538 /* FactViewController.swift */,
+				6B086BCA2C93638C00E1B538 /* FactViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B086BCD2C936B1C00E1B538 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B086BCE2C936B2B00E1B538 /* FactsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		6B14FE9E2C91AFB600961B01 /* Menu */ = {
@@ -385,6 +446,33 @@
 			path = DropDown;
 			sourceTree = "<group>";
 		};
+		6BE308C62C9359760092E595 /* Facts */ = {
+			isa = PBXGroup;
+			children = (
+				6B086BC72C93637600E1B538 /* Fact */,
+				6B086BC62C93635B00E1B538 /* FactsList */,
+			);
+			path = Facts;
+			sourceTree = "<group>";
+		};
+		6BE308C72C9359870092E595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308C82C9359A00092E595 /* FactsViewController.swift */,
+				6BE308C92C9359A00092E595 /* FactsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6BE308CC2C935A4C0092E595 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				6BE308CD2C935A690092E595 /* FactTableViewCell.swift */,
+				6BE308CE2C935A690092E595 /* FactTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -453,14 +541,17 @@
 				6B07F0012C91A41900F5AC5A /* FirstSplashViewController.xib in Resources */,
 				6B14FEAD2C91C2C200961B01 /* ClassesViewController.xib in Resources */,
 				6BE308BD2C9335CE0092E595 /* NoteTableViewCell.xib in Resources */,
+				6B086BCC2C93638C00E1B538 /* FactViewController.xib in Resources */,
 				6B07EFE02C9199F800F5AC5A /* Assets.xcassets in Resources */,
 				6B07EFF22C91A25C00F5AC5A /* SFProText-Medium.ttf in Resources */,
+				6BE308CA2C9359A00092E595 /* FactsViewController.xib in Resources */,
 				6B07EFF52C91A26300F5AC5A /* SFProText-Regular.ttf in Resources */,
 				6BE308AA2C930BB40092E595 /* DayInfoViewController.xib in Resources */,
 				6B07EFF32C91A25E00F5AC5A /* SFProText-Bold.ttf in Resources */,
 				6B14FE9C2C91AC3300961B01 /* WelcomeViewController.xib in Resources */,
 				6B07F0022C91A41C00F5AC5A /* SecondSplashViewController.xib in Resources */,
 				6B14FEA52C91B0C800961B01 /* MenuViewController.xib in Resources */,
+				6BE308CF2C935A690092E595 /* FactTableViewCell.xib in Resources */,
 				6B2EADE62C9212C500E06679 /* CreateClassViewController.xib in Resources */,
 				6B17C5912C921FAF0084F6E0 /* DayNameTableViewCell.xib in Resources */,
 				6B07EFE32C9199F800F5AC5A /* Base in Resources */,
@@ -483,24 +574,29 @@
 				6B14FEF82C91EE4E00961B01 /* TodayEventPresentationController.swift in Sources */,
 				6BE308BE2C9335CE0092E595 /* NoteTableViewCell.swift in Sources */,
 				6B14FE9D2C91AC3300961B01 /* WelcomeViewController.swift in Sources */,
+				6B086BC52C9361BE00E1B538 /* FactModel.swift in Sources */,
 				6B14FEA62C91B0C800961B01 /* MenuViewController.swift in Sources */,
 				6B17C5942C9229810084F6E0 /* CreateClassViewModel.swift in Sources */,
 				6B17C5902C921FAF0084F6E0 /* DayNameTableViewCell.swift in Sources */,
 				6B07EFDB2C9199F600F5AC5A /* SplashPageViewController.swift in Sources */,
+				6BE308D02C935A690092E595 /* FactTableViewCell.swift in Sources */,
 				6B07F0002C91A3C700F5AC5A /* UserDefaultsKeys.swift in Sources */,
 				6B2EADE12C91F43D00E06679 /* CurrentDate.swift in Sources */,
 				6B2EADE72C9212C500E06679 /* CreateClassViewController.swift in Sources */,
+				6B086BCF2C936B2B00E1B538 /* FactsViewModel.swift in Sources */,
 				6B17C58C2C921E130084F6E0 /* ClassesTableViewCell.swift in Sources */,
 				6B2EADE92C92130000E06679 /* BaseTextField.swift in Sources */,
 				6BE308B92C9334A40092E595 /* NotesViewModel.swift in Sources */,
 				6BE308B02C9318E70092E595 /* NotesTableViewCell.swift in Sources */,
 				6BE308C12C9342250092E595 /* NoteDropDownView.swift in Sources */,
 				6B07EFD72C9199F600F5AC5A /* AppDelegate.swift in Sources */,
+				6BE308CB2C9359A00092E595 /* FactsViewController.swift in Sources */,
 				6B07EFFD2C91A33F00F5AC5A /* SecondSplashViewController.swift in Sources */,
 				6B17C5962C924BF70084F6E0 /* BaseTextView.swift in Sources */,
 				6B14FEAE2C91C2C200961B01 /* ClassesViewController.swift in Sources */,
 				6BE308AB2C930BB40092E595 /* DayInfoViewController.swift in Sources */,
 				6B14FE992C91A97A00961B01 /* Font.swift in Sources */,
+				6B086BCB2C93638C00E1B538 /* FactViewController.swift in Sources */,
 				6B14FEB82C91D16800961B01 /* ClassesModel.swift in Sources */,
 				6B14FEBB2C91D3D500961B01 /* ClassesViewModel.swift in Sources */,
 				6BE308B62C9334650092E595 /* NotesViewController.swift in Sources */,

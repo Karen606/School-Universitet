@@ -14,6 +14,7 @@
                 <outletCollection property="categoriesButtonArray" destination="xHD-g2-gx6" collectionClass="NSMutableArray" id="Lxh-oe-jAq"/>
                 <outletCollection property="categoriesButtonArray" destination="xet-dr-Pta" collectionClass="NSMutableArray" id="5rk-PI-N5f"/>
                 <outletCollection property="categoriesButtonArray" destination="BtC-lr-5Gx" collectionClass="NSMutableArray" id="7fS-Yv-R9f"/>
+                <outletCollection property="categoriesButtonArray" destination="VkZ-BR-sNl" collectionClass="NSMutableArray" id="P5c-YD-JIP"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -22,10 +23,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="Jmf-mH-wuo">
-                    <rect key="frame" x="70" y="75" width="253" height="253"/>
+                    <rect key="frame" x="81.666666666666686" y="75" width="230" height="230"/>
                 </imageView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="43" translatesAutoresizingMaskIntoConstraints="NO" id="RTe-kD-bJE">
-                    <rect key="frame" x="55" y="359" width="283" height="266"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RTe-kD-bJE">
+                    <rect key="frame" x="55" y="336" width="283" height="330"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xHD-g2-gx6">
                             <rect key="frame" x="0.0" y="0.0" width="283" height="60"/>
@@ -47,7 +48,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xet-dr-Pta">
-                            <rect key="frame" x="0.0" y="103" width="283" height="60"/>
+                            <rect key="frame" x="0.0" y="90" width="283" height="60"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="tGD-e2-8M8"/>
@@ -66,7 +67,7 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BtC-lr-5Gx">
-                            <rect key="frame" x="0.0" y="206" width="283" height="60"/>
+                            <rect key="frame" x="0.0" y="180" width="283" height="60"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="60" id="dFV-WE-KLh"/>
@@ -82,6 +83,26 @@
                             </userDefinedRuntimeAttributes>
                             <connections>
                                 <action selector="clickedFacts:" destination="-1" eventType="touchUpInside" id="2cj-85-AfJ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkZ-BR-sNl">
+                            <rect key="frame" x="0.0" y="270" width="283" height="60"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="COx-g6-dNv"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Settings">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="12"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickedFacts:" destination="-1" eventType="touchUpInside" id="o9M-0x-5Kz"/>
+                                <action selector="clickedSettings:" destination="-1" eventType="touchUpInside" id="mwL-Eb-c3r"/>
                             </connections>
                         </button>
                     </subviews>
@@ -107,13 +128,13 @@
             <constraints>
                 <constraint firstItem="XPq-VE-NoN" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RTe-kD-bJE" secondAttribute="bottom" constant="16" id="48P-xY-TGF"/>
                 <constraint firstItem="Jmf-mH-wuo" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="DXm-oe-fXA"/>
-                <constraint firstItem="Jmf-mH-wuo" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.643766" id="HKR-MY-pex"/>
+                <constraint firstItem="Jmf-mH-wuo" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.269953" id="Hr9-K1-feX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="RTe-kD-bJE" secondAttribute="trailing" constant="55" id="JDs-qF-rEU"/>
                 <constraint firstItem="RTe-kD-bJE" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="55" id="Mxv-8X-del"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="XPq-VE-NoN" secondAttribute="bottom" constant="16" id="Raf-dh-Rp0"/>
+                <constraint firstItem="Jmf-mH-wuo" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.585242" id="XD5-H8-g1u"/>
                 <constraint firstItem="Jmf-mH-wuo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="16" id="eOF-Zt-Qy7"/>
                 <constraint firstItem="RTe-kD-bJE" firstAttribute="top" secondItem="Jmf-mH-wuo" secondAttribute="bottom" constant="31" id="nT8-QA-25j"/>
-                <constraint firstItem="Jmf-mH-wuo" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.296948" id="uev-cZ-Hwt"/>
                 <constraint firstItem="XPq-VE-NoN" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="xBt-Zz-Xny"/>
             </constraints>
             <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>

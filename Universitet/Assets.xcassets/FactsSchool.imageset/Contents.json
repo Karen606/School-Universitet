@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "chem-amerikanskie-chastnye-shkoly-otlichayutsya-ot-britanskih-blog2.png",
+      "filename" : "image.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "chem-amerikanskie-chastnye-shkoly-otlichayutsya-ot-britanskih-blog2@2x.png",
+      "filename" : "image@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "chem-amerikanskie-chastnye-shkoly-otlichayutsya-ot-britanskih-blog2@3x.png",
+      "filename" : "image@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

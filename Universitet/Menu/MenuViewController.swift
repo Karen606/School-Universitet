@@ -23,11 +23,18 @@ class MenuViewController: UIViewController {
     }
     
     @IBAction func clickedNotes(_ sender: UIButton) {
-        let classesVC = NotesViewController(nibName: "NotesViewController", bundle: nil)
-        navigationController?.pushViewController(classesVC, animated: true)
+        let notesVC = NotesViewController(nibName: "NotesViewController", bundle: nil)
+        navigationController?.pushViewController(notesVC, animated: true)
 
     }
 
     @IBAction func clickedFacts(_ sender: UIButton) {
+        let factsVC = FactsViewController(nibName: "FactsViewController", bundle: nil)
+        navigationController?.pushViewController(factsVC, animated: true)
+    }
+    
+    @IBAction func clickedSettings(_ sender: UIButton) {
+//        let notesVC = NotesViewController(nibName: "NotesViewController", bundle: nil)
+//        navigationController?.pushViewController(notesVC, animated: true)
     }
 }

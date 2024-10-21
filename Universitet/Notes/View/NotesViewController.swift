@@ -20,6 +20,7 @@ class NotesViewController: UIViewController {
         setNavigationBar(title: "Notes")
         setupUI()
         subscribe()
+        viewModel.fetchData()
     }
     
     func setupUI() {
